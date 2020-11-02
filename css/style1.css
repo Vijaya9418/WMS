@@ -1,0 +1,251 @@
+body {
+  padding: 60px 0;
+  background-color: white;
+  margin: 0 auto;
+  width: 600px;
+}
+.body-text {
+  padding: 0 20px 30px 20px;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+}
+form{
+box-shadow: 0 0 10px 5px rgba(10, 0, 0, 0.8);
+margin: -15px;
+}
+select {
+    display: inline-block;
+    width: 50%;
+    margin-right: 410px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 850px;
+    height: 30px;
+}
+hr{
+font-size: 10px;
+color: #333;
+}
+label1{
+margin-left: 8px;
+font-size: 20px;
+font-weight: bold;
+}
+label{
+margin-left: 8px;
+font-size: 20px;
+}
+::placeholder{
+color: gray;
+}
+.personal-information {
+  background-color: #333;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Roboto";
+}
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 96.5%;
+  border: none;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 96.5%;
+  border: none;
+}
+input[type="password"]{
+  display: block;
+  height: 50px;
+  width: 96.5%;
+  border: none;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: red;
+  transition: 0.3s;
+}
+button{
+cursor: pointer;
+}
+.btn{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  height: 57px;
+  text-decoration:none;
+}
+.btn:hover{
+  background-color: red;
+  transition: 0.3s;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+}
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.container:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+.container input:checked ~ .checkmark{
+    background-color: #333;
+}
+.container:hover input ~ .radiomark{
+    background-color: #ccc;
+}
+.container input:checked ~ .radiomark{
+    background-color: #333;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radiomark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after{
+    display: block;
+}
+.container input:checked ~ .radiomark:after{
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container .radiomark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+#column-left {
+  width: 46.8%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.8%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-container {
+    margin: 12%;
+  }
+  input {
+    font-size: 20px;
+  }
+  #input-button {
+    width: 100%;
+  }
+  #input-field {
+    width: 96.5%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input {
+    margin: 2px 0;
+  }
+  input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  }

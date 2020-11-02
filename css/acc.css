@@ -1,0 +1,99 @@
+body {
+  padding: 60px 0;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  width: 600px;
+}
+.body-text {
+  padding: 0 20px 30px 20px;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+}
+.avatar {
+    vertical-align: middle;
+    padding:4.75px;
+    width: 75px;
+    height: 75px;
+    border-radius: 60%;
+}
+.avatar:hover{
+position: relative;
+right: -125px;
+width: 170px;
+height: 170px;
+border-radius: 60%;
+}
+img{
+float:right;
+}
+form{
+box-shadow: 0 0 10px 6px rgba(10, 0, 0, 0.5);
+margin: -15px;
+}
+hr{
+font-size: 10px;
+color: #333;
+}
+ol{
+margin-right:100px;
+}
+label{
+margin-left: 8px;
+font-size: 20px;
+font-weight: bold;
+}
+.personal-information {
+  background-color: #333;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Roboto";
+}
+button{
+cursor: pointer;
+}
+.btn{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  height: 57px;
+  text-decoration:none;
+}
+.btn:hover{
+  background-color: red;
+  transition: 0.3s;
+}
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 850px;
+    height: 30px;
+}
+.form-container {
+    margin: 12%;
+}  
+#column-left {
+  width: 46.8%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.8%;
+  float: right;
+}

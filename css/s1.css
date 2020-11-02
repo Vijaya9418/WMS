@@ -1,0 +1,40 @@
+body
+{
+
+justify-content:center;
+align-items:center;
+
+
+}
+p
+{
+position:relative;
+font-family:casteller;
+color:#fff;
+text-transform: uppercase;
+font-size:2em;
+letter-spacing:4px;
+overflow:hidden;
+background:linear-gradient(90deg,red, blue);
+background-repeat: 5;
+background-size:80%;
+animation: animate 5s linear infinite;
+margin-top: 10.4999999px;
+margin-bottom: 0px;
+width: 100%;
+border-radius: 14px;
+
+}
+@keyframes animate
+{
+0%
+{
+background-position:-500%;
+}
+100%
+{
+background-position: 500%;
+}
+
+
+}

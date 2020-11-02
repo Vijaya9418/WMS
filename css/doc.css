@@ -1,0 +1,54 @@
+.column {
+  float: left;
+  width: 31.8%;
+  margin-bottom: 16px;
+  
+  padding: 8px;
+}
+.row {
+  margin: 0 2px;}
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  
+}
+.container {
+  padding: 16px;
+  
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: red;
+}
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  @media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+    
+  }
+}
