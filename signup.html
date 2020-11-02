@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN UP</title>
+      <link rel="stylesheet" href="css/style1.css">
+      <link rel="icon" href="favicon.ico" />
+        <style>
+     body{
+margin:0;
+padding:0;
+background:url('WED.jpeg');
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
+font-family:sans-serif;
+}
+.loginbox
+{
+width:60vw;
+background: rgba(0,0,0,0.75);
+color: #fff;
+top: 10%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,0px);
+box-sizing :border-box;
+padding:60px 60px;
+background-color: rgba(27, 23, 23, 0.637);
+}
+.loginbox:hover{
+  
+background-color: rgba(12, 12, 12, 0.767);
+}
+h1{
+margin:0;
+padding:0 0 20px;
+text-align:center;
+font-size:25px;
+}
+.avatar {
+    margin-top: -40px;
+    padding:4.75px;
+    width: 99px;
+    height: 99px;
+    border-radius: 10%;
+    background-color: white;
+}
+.loginbox p{
+margin:0;
+padding:0;
+font-weight:bold;
+}
+.loginbox input{
+width:100%;
+margin-bottom:20px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+border:none;
+border-bottom:1px solid #fff;
+background:transparent;
+outline:none;
+height:40px;
+color: #fff;
+font-size: 16px;
+}
+.loginbox input[type="button"]
+{
+border:none;
+outline:none;
+height:40px;
+background:red;
+color:#fff;
+font-size:18px;
+border-radius:20px;
+}
+.loginbox input[type="button"]:hover
+{
+cursor:pointer;
+background: #ffc107;
+color: #333;
+}
+.loginbox a{
+text-decoration:none;
+font-size:16px;
+line-height:20px;
+color:rgb(248, 242, 242);
+}
+.loginbox a:hover
+{
+color: #ffc107;
+}
+#input-button , .btn{
+  background-color: rgba(226, 81, 81, 0.644);
+  padding: 0%;
+  width: 20vw;
+  margin: 4px auto;
+  display: block;
+}
+#input-button:hover, .btn:hover{background-color: red;}
+
+   </style>
+</head>
+<body>
+  <div class="body-text"></div>
+  <form method="post;" action="MAIN.html" class="loginbox">
+    
+      <div class="personal-information">
+        <h1>Sign up</h1>
+      </div><br>
+          <input id="column-left" type="text" name="first-name" placeholder="First Name" required="required"/>
+          <input id="column-left" type="text" name="last-name" placeholder="Surname" required="required"/>
+          <input id="username1" type="email" name="email" autocomplete="on" maxlength="40" placeholder="example@abc.com" required="required"/>
+          <input id="pa" type="password" name="pass" placeholder="Password" required="required"/>
+          <input id="cos" type="password" name="pass1" placeholder="Confirm Password" required="required"/>          
+          <input id="column-left" type="text" name="dob" placeholder="D.O.B(DD / MM / YYYY)" required="required"/>
+        
+          <input id="input-field" type="text" name="streetaddress" autocomplete="on" maxlength="45" placeholder="Street Address" required="required"/>
+          <input id="column-left" type="text" name="city" autocomplete="on" maxlength="20" placeholder="City" required="required"/>
+          <input id="column-left" type="text" name="zipcode" autocomplete="on" pattern="[0-9]*" maxlength="6" placeholder="PIN code" required="required"/>
+         <input id="input-field" type="text" name="state" autocomplete="on" placeholder="State" required="required"/>
+          <br><hr><br>
+          k
+          </div>
+          
+           <label1>Do you feel you need our Security Services?</label1><br><br>
+          <label class="container"> Yes
+          <input name="inj" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+          <label class="container"> No
+          <input name="inj" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+           <br><hr><br>
+            <label1>Please describe your  food type :</label1><br><br>
+          <label class="container"> Pure Veg
+          <input name="alc" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+          <label class="container"> Non Veg
+          <input name="alc" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+          <label class="container"> both Veg & non Veg
+          <input name="alc" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+          <label class="container"> Continental
+          <input name="alc" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+          <label class="container"> All type of Food
+          <input name="alc" type="radio"/>
+          <span class="radiomark"></span>
+          </label>
+           <br><br>        
+          <input id="input-button" type="submit" value="Sign Up"  onclick="al();"ONCLICK="alert('ACCOUNT CREATED, REDIRECTING TO HOME PAGE');">
+          <a href="index.html" style="text-decoration:none;"><button type="button" class="btn" onclick="alert('REDIRECTING TO LOGIN PAGE')"><center>Already have an account?</center></button></a>
+          
+    </form>
+    
+    <script>
+      function al(){
+
+        var str1 = $("#pa").val();
+        var str2 = $("#cos").val();
+      
+        if (str1 == str2)
+  {
+   
+    alert('ACCOUNT CREATED, REDIRECTING TO HOME PAGE');
+  }
+}
+    </script>
+   <footer style="background-color:#111111; border-radius: 5px; width:100vw; ">
+    <i style="color:rgba(255, 255, 255, 0.781)"><a href="home.html" title="vijayashree"style="color:red;">wedding wonders</a></i> </center>
+    <i style="float:right;color:rgba(255, 255, 255, 0.781)">
+       Designed by <a href="https://www.instagram.com/vijaya0904/"title="vijayashree" style="color:red;">vijayashree&nbsp;</a>
+    </i>
+  </footer>
+    
+</body>
+</html>
